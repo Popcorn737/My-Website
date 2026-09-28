@@ -1,0 +1,159 @@
+/****************** page defaults ******************/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* make default text spacing a bit more generous */
+body { line-height: 1.6; }
+
+.fixed-width {
+    width: 600px;
+    margin: 0 auto; /* centers content on the screen */
+}
+
+.hidden {
+    display: none; /* hides elements that are needed for DOM */
+}
+
+.flex {
+    display: flex; 
+}
+
+/****************** typography ******************/
+
+h1, h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+/* typography sizes */
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; font-weight: 700; }
+
+/* footer text size */
+footer, footer p, footer a { font-size: 12px; }
+
+/* anchors: no underline until hover */
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+
+
+
+
+
+
+
+
+
+
+
+/****************** site-wide styling ******************/
+
+
+/* header / footer site-wide styling */
+header, footer { background: #c74365; }
+
+/* space between header/main and main/footer */
+header { padding: 0; }
+/* provide more space above and below main */
+header + main, main { margin-top: 50px; }
+main + footer, main { margin-bottom: 50px; }
+
+/* header layout: keep fixed-width centered, align items */
+header .fixed-width { align-items: center; gap: 20px; }
+header img { width: 30px; height: 30px; padding: 15px; box-sizing: content-box; }
+
+/* top-level heading and header links vertically centered */
+header h1, header nav a { line-height: 60px; }
+
+/* header anchors styling */
+header nav a { color: black; font-size: 18px; }
+
+/* push nav to the right so last link is flush with container edge */
+header nav { margin-left: auto; }
+header nav ul { list-style: none; margin: 0; padding: 0; }
+header nav ul li { margin-left: 25px; }
+
+/* footer text centered with inner spacing */
+/* a little more breathing room in footer */
+footer .fixed-width { text-align: center; padding: 20px 0; }
+
+
+
+
+
+
+
+
+
+
+
+/****************** home page styling ******************/
+
+
+/* home page */
+.italics { font-style: italic; }
+
+/* space articles out more */
+article { background-color: lightgray; padding: 20px; margin: 25px 0; }
+
+/* spacing under headings and paragraphs */
+h1 { margin-bottom: 20px; }
+h2 { margin-bottom: 20px; }
+p { margin-bottom: 20px; }
+
+
+
+
+
+
+
+
+
+
+/****************** profile page styling ******************/
+
+
+/* profile page layout */
+.wide-column { width: 420px; }
+.narrow-column { width: 180px; }
+
+.wide-column img { width: 120px; height: auto; }
+
+.labels { font-weight: 700; width: 70px; text-align: right; margin-right: 20px; }
+
+.light-background { background-color: lightgray; /* flexible padding, no forced min height so box sizes to content */ box-sizing: border-box; padding: 12px; min-height: 0; margin-top: 30px; align-self: flex-start; }
+.light-background h2 { margin-top: 10px; margin-left: 15px; margin-bottom: 15px; }
+
+/* ensure inner layout inside the grey box aligns and wraps properly */
+.light-background .flex { align-items: flex-start; gap: 10px; }
+.light-background p { margin: 6px 0; }
+
+/* add gap between profile columns when using flex and keep children from stretching vertically */
+main.fixed-width.flex { gap: 30px; align-items: flex-start; }
+
+
+
+
+
+
+
+
+/****************** form styling ******************/
+
+
+/* form styling */
+.timesheet-content form { margin: 60px 0; }
+label { display: block; font-weight: 700; text-align: center; }
+input[type="text"] { width: 100px; }
+
+.timesheet-content .flex > div { margin-right: 25px; }
+
+/* space above button and keep flush to the fixed container edge */
+button { height: 21px; width: 100px; display: block; margin-top: 40px; margin-left: auto; border: 1px solid grey; background: white; border-radius: 4px; font-family: inherit; }
+button:hover { background: lightgrey; }
