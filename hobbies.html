@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hobbies - My Website</title>
+    <link rel="stylesheet" href="./Styles/styles.css" />
 </head>
-<body>      
+<body>
+    <header class="site-header">
+        <div class="container nav-bar">
+            <div class="brand">Aichmi</div>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about_me.html">About Me</a></li>
+                    <li><a class="active" href="./hobbies.html">Hobbies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h1>Hobbies</h1>
-    <p>This page contains information about my hobbies.</p> 
+    <main class="container page-content">
+        <section class="page-intro">
+            <p class="eyebrow">Things I enjoy</p>
+            <h1>My hobbies keep me inspired and energized.</h1>
+        </section>
 
+        <section class="feature-grid">
+            <article class="card">
+                <p class="card-tag">Creative</p>
+                <h3>Design & visuals</h3>
+                <p>I enjoy creating looks, layouts, and ideas that feel modern and expressive.</p>
+            </article>
 
-    <h1></h1>
+            <article class="card">
+                <p class="card-tag">Active</p>
+                <h3>Exploring outdoors</h3>
+                <p>Being outside, trying new experiences, and keeping a sense of adventure is important to me.</p>
+            </article>
 
+            <article class="card">
+                <p class="card-tag">Mindful</p>
+                <h3>Learning & reading</h3>
+                <p>I like finding time to learn, think deeply, and better understand the world around me.</p>
+            </article>
+        </section>
 
-    
-    <nav>
-                    <h2 class="hidden">nav</h2>
-                    <ul class="flex">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about_me.html">about me</a></li>
-                        <li><a href="./hobbies.html">Hobbies</a></li>
-                    </ul>
-                </nav>
+        <section class="card quote-card">
+            <p class="quote-mark">“</p>
+            <p class="quote-text">
+                The best hobbies are the ones that make you want to keep growing, exploring, and trying something new.
+            </p>
+        </section>
+    </main>
 
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Aichmi</p>
+        </div>
+    </footer>
 </body>
-
-
 </html>
 

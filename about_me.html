@@ -1,43 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About - My Website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - My Website</title>
+    <link rel="stylesheet" href="./Styles/styles.css" />
 </head>
 <body>
-    <h1>About Me</h1>
-    <p>This page contains information about me.</p>
+    <header class="site-header">
+        <div class="container nav-bar">
+            <div class="brand">Aichmi</div>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a class="active" href="./about_me.html">About Me</a></li>
+                    <li><a href="./hobbies.html">Hobbies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <section class="page-intro">
+            <p class="eyebrow">About me</p>
+            <h1>Curious, creative, and always building something meaningful.</h1>
+        </section>
+
+        <section class="two-column">
+            <div class="card profile-card">
+                <h2>Quick intro</h2>
+                <p>
+                    I’m the kind of person who enjoys a mix of creativity, learning, and practical
+                    problem-solving. Whether I’m exploring new ideas or putting plans into motion,
+                    I like to keep life thoughtful and active.
+                </p>
+            </div>
+
+            <div class="card details-card">
+                <h2>What matters to me</h2>
+                <ul class="detail-list">
+                    <li>Learning new things without fear of trying</li>
+                    <li>Creating work that feels intentional and personal</li>
+                    <li>Balancing a productive lifestyle with joy and curiosity</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="info-grid">
+            <article class="info-card">
+                <p class="card-tag">Values</p>
+                <h3>How I approach life</h3>
+                <p>Thoughtful effort, honest curiosity, and a willingness to keep improving.</p>
+            </article>
+
+            <article class="info-card">
+                <p class="card-tag">Style</p>
+                <h3>Creative energy</h3>
+                <p>I enjoy aesthetics, clarity, and experiences that feel unique and memorable.</p>
+            </article>
+
+            <article class="info-card">
+                <p class="card-tag">Contact</p>
+                <h3>Let’s connect</h3>
+                <p>Email: aichmi@icloud.com</p>
+                <p>Instagram: @aichmi</p>
+                <p>Twitter: @aichmi</p>
+                <p>LinkedIn: @aichmi</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Aichmi</p>
+        </div>
+    </footer>
 </body>
-
-<head>
-    <meta charset="UTF-8">
-    <title>Contact - My Website</title>
-</head>
-<body>
-    <h2>Contact</h2>
-    <p>This page has my contact information.</p>
-
-    <p>Feel free to reach out to me via email or social media.</p>
-    <p>My email is aichmi@icloud.com</p>
-    <p>My social media handles are:</p>
-    <ul>
-        <li>Instagram: @aichmi</li>
-        <li>Twitter: @aichmi</li>
-        <li>LinkedIn: @aichmi</li>
-    </ul>   
-
-    <nav>
-                    <h2 class="hidden">nav</h2>
-                    <ul class="flex">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about_me.html">about me</a></li>
-                        <li><a href="./hobbies.html">Hobbies</a></li>
-                    </ul>
-                </nav>
-
-
-</body>
-</html>
-
-
 </html>

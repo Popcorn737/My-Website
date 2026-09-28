@@ -1,30 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - My Website</title>
+    <link rel="stylesheet" href="./Styles/styles.css" />
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is the home page.</p>
-</body>
-<body>
-        <header>
-            <div class="fixed-width flex">
-                <img src="images/logo.png" alt="personal logo" class="logo">
-                <nav>
-                    <h2 class="hidden">nav</h2>
-                    <ul class="flex">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about_me.html">about me</a></li>
-                        <li><a href="./hobbies.html">Hobbies</a></li>
-                    </ul>
-                </nav>
+    <header class="site-header">
+        <div class="container nav-bar">
+            <div class="brand">Aichmi</div>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a class="active" href="./index.html">Home</a></li>
+                    <li><a href="./about_me.html">About Me</a></li>
+                    <li><a href="./hobbies.html">Hobbies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Welcome</p>
+                <h1>Designing a life that is curious, creative, and full of momentum.</h1>
+                <p class="lead">
+                    I’m a builder at heart: someone who enjoys learning, making, and exploring the
+                    things that make everyday life more interesting.
+                </p>
+                <div class="button-row">
+                    <a class="button primary" href="./about_me.html">Learn more</a>
+                    <a class="button secondary" href="./hobbies.html">See my hobbies</a>
+                </div>
             </div>
-        </header>
+
+            <aside class="hero-card">
+                <p class="badge">Currently</p>
+                <h2>Always learning</h2>
+                <ul class="mini-list">
+                    <li>Creative problem solving</li>
+                    <li>Web design and ideas</li>
+                    <li>Life beyond the screen</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="feature-grid" aria-label="Highlights">
+            <article class="card">
+                <p class="card-tag">About</p>
+                <h3>Who I am</h3>
+                <p>I like thoughtful work, meaningful projects, and staying curious about the world around me.</p>
+            </article>
+
+            <article class="card">
+                <p class="card-tag">Passions</p>
+                <h3>Hobbies</h3>
+                <p>From creative exploration to everyday adventures, I enjoy things that keep me engaged and inspired.</p>
+            </article>
+
+            <article class="card">
+                <p class="card-tag">Connect</p>
+                <h3>Say hello</h3>
+                <p>Feel free to reach out through the social links and keep the conversation going.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Aichmi</p>
+        </div>
+    </footer>
 </body>
-
-
-
-
 </html>
